@@ -15,13 +15,8 @@ class LoginPage extends Page {
         await this.fieldPassword.setValue('secret_sauce');
         await this.buttonLogin.click();
     }
-
-    /**
-     * overwrite specific options to adapt it to page object
-     */
     open () {
         return super.open('/');
     }
 }
-
 module.exports = new LoginPage();
